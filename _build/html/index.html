@@ -23,7 +23,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Tien&#39;s Sphinx Docs 1.0 documentation" href="#" /> 
+    <link rel="top" title="Tien&#39;s Sphinx Docs 1.0 documentation" href="#" />
+    <link rel="next" title="1. This is the linked file!" href="linked.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +33,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="linked.html" title="1. This is the linked file!"
+             accesskey="N">next</a> |</li>
         <li><a href="#">Tien&#39;s Sphinx Docs 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -45,7 +49,11 @@
 <h1>Welcome to Tien&#8217;s Sphinx Docs&#8217;s documentation!<a class="headerlink" href="#welcome-to-tien-s-sphinx-docs-s-documentation" title="Permalink to this headline">¶</a></h1>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linked.html">1. Hello</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linked2.html">1.1. Nested linked file</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -56,6 +64,158 @@
 <li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
 <li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
 </ul>
+<p>:ref:<em>emphasis</em>
+:ref:<strong>boldface</strong>
+:ref:<tt class="docutils literal"><span class="pre">some</span> <span class="pre">code</span> <span class="pre">sample</span></tt></p>
+<ul>
+<li><p class="first">This is a bulleted list</p>
+</li>
+<li><dl class="first docutils">
+<dt>It has two items, the second</dt>
+<dd><p class="first last">item uses two lines</p>
+</dd>
+</dl>
+</li>
+</ul>
+<ol class="arabic simple">
+<li>This is a list</li>
+<li>This goes with the above item</li>
+<li>Another list</li>
+<li>With #</li>
+</ol>
+<ul>
+<li><p class="first">parent</p>
+</li>
+<li><p class="first">parent</p>
+<blockquote>
+<div><ul class="simple">
+<li>child</li>
+<li>child</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">parent</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt>term (up to a line of text)</dt>
+<dd><p class="first">Definition of the term, which must be indented</p>
+<p class="last">and can even consist of multiple paragraphs</p>
+</dd>
+<dt>next term</dt>
+<dd>Description.</dd>
+</dl>
+<div class="line-block">
+<div class="line">These lines</div>
+<div class="line">are broken just like</div>
+<div class="line">in the source file.</div>
+</div>
+<p>This is a normal text paragraph. The next paragraph is a code sample:</p>
+<div class="highlight-python"><div class="highlight"><pre>It is not processed in any way, except
+that the indentation is removed.
+
+It can span multiple lines.
+</pre></div>
+</div>
+<p>This is a normal text paragraph again.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td>...</td>
+<td>...</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>Go to Google <a class="reference external" href="http://www.google.ca/">google_link</a>.</p>
+<div class="section" id="parts">
+<h2>Parts<a class="headerlink" href="#parts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="chapters">
+<h3>Chapters<a class="headerlink" href="#chapters" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="sections">
+<h1>Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="some.module.name.foo">
+<tt class="descclassname">some.module.name.</tt><tt class="descname">foo</tt><big>(</big><em>x</em><big>)</big><a class="headerlink" href="#some.module.name.foo" title="Permalink to this definition">¶</a></dt>
+<dt>
+<tt class="descclassname">some.module.name.</tt><tt class="descname">foo</tt><big>(</big><em>y</em>, <em>z</em><big>)</big></dt>
+<dd><p>Return a line of text input from the user.</p>
+</dd></dl>
+
+<img alt="_images/mona_lisa.png" src="_images/mona_lisa.png" />
+</div>
+<div class="section" id="section-to-cross-reference">
+<span id="my-reference-label"></span><h1>Section to cross-reference<a class="headerlink" href="#section-to-cross-reference" title="Permalink to this headline">¶</a></h1>
+<p>This is the text of the section.</p>
+<p>It refers to the section itself, see <a class="reference internal" href="#my-reference-label"><em>Section to cross-reference</em></a>.</p>
+<p><a class="reference internal" href="linked.html"><em>Hello</em></a></p>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id1">[1]</a> dolor sit amet ... <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Text of the first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Text of the second footnote.</td></tr>
+</tbody>
+</table>
 </div>
 
 
@@ -67,9 +227,20 @@
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Welcome to Tien&#8217;s Sphinx Docs&#8217;s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a><ul>
+<li><a class="reference internal" href="#parts">Parts</a><ul>
+<li><a class="reference internal" href="#chapters">Chapters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sections">Sections</a></li>
+<li><a class="reference internal" href="#section-to-cross-reference">Section to cross-reference</a></li>
 </ul>
 
+  <h4>Next topic</h4>
+  <p class="topless"><a href="linked.html"
+                        title="next chapter">1. This is the linked file!</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -98,6 +269,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="linked.html" title="1. This is the linked file!"
+             >next</a> |</li>
         <li><a href="#">Tien&#39;s Sphinx Docs 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
